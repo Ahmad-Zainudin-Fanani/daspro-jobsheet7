@@ -12,12 +12,12 @@ public class PenjualanTiketBioskop02 {
         double totalPendapatan = 0;
 
         do {
-            System.out.print("Masukkan jumlah tiket yang dibeli (negatif untuk keluar): ");
+            System.out.print("Masukkan jumlah tiket yang dibeli (bilangan negatif tidak valid): ");
             jmlTiket = sc.nextInt();
 
             // Memeriksa input valid
             if (jmlTiket < 0) {
-                System.out.println("Input negatif, program dihentikan.");
+                System.out.println("Bilangan negatif, program dihentikan.");
                 break; // Keluar dari perulangan jika input negatif
             } else if (jmlTiket == 0) {
                 System.out.println("Jumlah tiket tidak bisa nol, silakan masukkan jumlah yang valid.");
